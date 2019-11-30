@@ -9,13 +9,17 @@ const passport = require('passport');
 //Passport config
 require('./config/passport')(passport);
 
-//DB config
-const db = require('./config/keys').MongoURI;
 
-// Connect to Mongo
-mongoose.connect(db, {useNewUrlParser: true},)
-    .then(() => console.log('MongoDB connected'))
-    .catch(err => console.log(err));
+
+//TODO  uncomment and check config/keys/keys.js
+
+//  //DB config
+// const db = require('./config/keys').MongoURI;
+//
+// // Connect to Mongo
+// mongoose.connect(db, {useNewUrlParser: true},)
+//     .then(() => console.log('MongoDB connected'))
+//     .catch(err => console.log(err));
 
 //EJS
 app.use(expressLayouts);

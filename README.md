@@ -8,5 +8,5 @@
 
 
 ```
-For full usage you need add correct MongoDB URI into config/keys.js 
+For full usage check TODO's 
  ```
